@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Para Belén 💌</title>
-<meta name="description" content="Un mensaje especial por el Día del Psicólogo. Toca para abrir.">
+<meta name="description" content="Un mensaje especial por el Día del Psicólogo. Tocá para abrir.">
 <meta property="og:title" content="Para Belén 💌">
-<meta property="og:description" content="Un mensaje especial por el Día del Psicólogo. Toca para abrir.">
+<meta property="og:description" content="Un mensaje especial por el Día del Psicólogo. Tocá para abrir.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://diegodev1012.github.io/Feliz-dia-Belen/">
 <meta property="og:image" content="https://diegodev1012.github.io/Feliz-dia-Belen/belen.jpg">
@@ -271,12 +271,12 @@
 <!-- 1. Sobre -->
 <section class="screen active" id="s1">
   <div class="inner">
-    <p class="eyebrow">Tienes un mensaje</p>
+    <p class="eyebrow">Tenés un mensaje</p>
     <div class="sobre-wrap">
       <div class="sobre" id="sobre" role="button" tabindex="0" aria-label="Abrir el sobre">
         <div class="cuerpo"></div>
         <div class="carta">
-          <small>Para ti</small>
+          <small>Para vos</small>
           <span class="script">con cariño</span>
         </div>
         <div class="bolsillo"></div>
@@ -285,7 +285,7 @@
       </div>
     </div>
     <p class="para">Para: <span class="script">Belén</span></p>
-    <p class="hint">Toca el sobre para abrirlo 💌</p>
+    <p class="hint">Tocá el sobre para abrirlo 💌</p>
   </div>
 </section>
 
@@ -307,14 +307,14 @@
       <span class="nombre script">Belén!</span>
     </div>
     <p class="sub">Que hagas feliz a más personas, como lo has hecho conmigo 💛</p>
-    <button class="btn" id="aTarjetas">Tengo algo más para ti ✨</button>
+    <button class="btn" id="aTarjetas">Tengo algo más para vos ✨</button>
   </div>
 </section>
 
 <!-- 3. Tarjetas -->
 <section class="screen" id="s3">
   <div class="inner">
-    <p class="eyebrow">Toca cada tarjeta</p>
+    <p class="eyebrow">Tocá cada tarjeta</p>
     <h2 style="margin-top:8px">Lo que te hace increíble</h2>
     <div class="tarjetas" id="tarjetas"></div>
     <p class="contador" id="contador">0 de 4 descubiertas</p>
@@ -325,18 +325,18 @@
 <!-- 4. Carta -->
 <section class="screen" id="s4">
   <div class="inner">
-    <p class="eyebrow">Una carta para ti</p>
+    <p class="eyebrow">Una carta para vos</p>
     <div class="papel" id="papel">
       <span class="saludo script">Belén,</span>
-      <p>Hoy es tu día y quería regalarte algo hecho solo para ti.</p>
-      <p>Acabas de terminar tu carrera y eso merece celebrarse en grande. Elegiste una profesión que cuida lo más valioso que tenemos: la mente y el corazón de las personas.</p>
-      <p>Admiro todo el esfuerzo que pusiste para llegar hasta aquí y la forma tan bonita en que haces sentir a los demás. No tengo duda de que vas a ser una gran psicóloga.</p>
-      <p>Que nunca te falten las ganas de ayudar, ni personas que te cuiden como tú cuidas a otros.</p>
+      <p>Hoy es tu día y quería regalarte algo hecho solo para vos.</p>
+      <p>Acabás de terminar tu carrera y me alegro mucho por vos. Elegiste una profesión que cuida lo más valioso que tenemos: la mente y el corazón de las personas.</p>
+      <p>Admiro todo el esfuerzo que pusiste para llegar hasta aquí y la forma tan bonita en que hacés sentir a los demás. No tengo duda de que vas a ser una gran psicóloga.</p>
+      <p>Que nunca te falten las ganas de ayudar, ni personas que te cuiden como vos cuidás a otros.</p>
       <p class="fin">¡Feliz primer Día del Psicólogo con la carrera terminada! 💛</p>
       <p class="firma">Con mucho cariño<br><span class="script" id="firma"></span></p>
     </div>
     <div class="versiculo" id="versiculo">
-      <p class="veyebrow">Un versículo para ti</p>
+      <p class="veyebrow">Un versículo para vos</p>
       <p class="vtexto">“Sobre toda cosa guardada, guarda tu corazón;<br>porque de él mana la vida.”</p>
       <p class="vref">Proverbios 4:23</p>
     </div>
@@ -352,8 +352,8 @@
   const FIRMA = "";
 
   const TARJETAS = [
-    { emoji: "🧠", nombre: "Tu mente",    texto: "Entiendes a las personas de una forma que pocos logran." },
-    { emoji: "💛", nombre: "Tu corazón",  texto: "Escuchas sin juzgar y haces que cualquiera se sienta en un lugar seguro." },
+    { emoji: "🧠", nombre: "Tu mente",    texto: "Entendés a las personas de una forma que pocos logran." },
+    { emoji: "💛", nombre: "Tu corazón",  texto: "Escuchás sin juzgar y hacés que cualquiera se sienta en un lugar seguro." },
     { emoji: "🌱", nombre: "Tu vocación", texto: "Vas a ayudar a muchas personas a sanar y a crecer. Eso cambia vidas." },
     { emoji: "✨", nombre: "Tu sonrisa",  texto: "Y sí… tu sonrisa también es un poquito de terapia." }
   ];
@@ -467,10 +467,10 @@
     el.className = 'tarjeta';
     el.setAttribute('role', 'button');
     el.setAttribute('tabindex', '0');
-    el.setAttribute('aria-label', t.nombre + ': toca para voltear');
+    el.setAttribute('aria-label', t.nombre + ': tocá para voltear');
     el.innerHTML =
       '<div class="gira">' +
-        '<div class="cara frente"><span class="emoji">' + t.emoji + '</span><span class="nom">' + t.nombre + '</span><span class="toca">Toca</span></div>' +
+        '<div class="cara frente"><span class="emoji">' + t.emoji + '</span><span class="nom">' + t.nombre + '</span><span class="toca">Tocá</span></div>' +
         '<div class="cara atras"><span class="emoji">' + t.emoji + '</span><span>' + t.texto + '</span></div>' +
       '</div>';
     const voltear = () => {
